@@ -58,13 +58,16 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell // cells take a lot of memory, so give me recycled cells off the screen
         
         let movie = movies[indexPath.row] // access 1 to n movies
-        let title = movie["title"]
-        cell.textLabel!.text = title as! String  // specify the type
+        let title = movie["title"] as! String
+        let synopsis = movie["overview"] as! String
+        
+        cell.titleLabel.text = title
         // cell.textLabel!.text = "row: \(indexPath.row)"  // print out x rows with output row: #
         // Why the !/?^: called Swift Optionals
+        cell.synopsisLabel.text = synopsis
         
         return cell
     }

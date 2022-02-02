@@ -17,6 +17,7 @@
 		56771B9B27AA0A8D00917DE7 /* FlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56771B9A27AA0A8D00917DE7 /* FlixUITestsLaunchTests.swift */; };
 		56771BAC27AA166E00917DE7 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56771BAB27AA166E00917DE7 /* MovieViewController.swift */; };
 		56771BAE27AADAD900917DE7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56771BAD27AADAD900917DE7 /* MovieCell.swift */; };
+		56771BB127AAF9C100917DE7 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 56771BB027AAF9C100917DE7 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56771BB127AAF9C100917DE7 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = Flix;
+			packageProductDependencies = (
+				56771BB027AAF9C100917DE7 /* AlamofireImage */,
+			);
 			productName = Flix;
 			productReference = 56771B7427AA0A8C00917DE7 /* Flix.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 56771B6B27AA0A8C00917DE7;
+			packageReferences = (
+				56771BAF27AAF9C100917DE7 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 56771B7527AA0A8C00917DE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -608,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56771BAF27AAF9C100917DE7 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56771BB027AAF9C100917DE7 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56771BAF27AAF9C100917DE7 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56771B6C27AA0A8C00917DE7 /* Project object */;
 }
