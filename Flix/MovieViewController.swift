@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MovieViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -68,6 +69,13 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         // cell.textLabel!.text = "row: \(indexPath.row)"  // print out x rows with output row: #
         // Why the !/?^: called Swift Optionals
         cell.synopsisLabel.text = synopsis
+        
+        // embed posters inside the cell
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        cell.posterView.af.setImage(withURL: posterUrl!)
         
         return cell
     }
