@@ -36,27 +36,35 @@
                                                         <constraint firstAttribute="width" constant="100" id="y7b-fb-kmS"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the title of the movie what happens right here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-Xg-o6m">
-                                                    <rect key="frame" x="120" y="8" width="284" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the title of the movie what happens right here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-Xg-o6m">
+                                                    <rect key="frame" x="119" y="8" width="285" height="38.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38.5" id="zkC-3t-R4O"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" showsExpansionTextWhenTruncated="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dpb-zF-wHl">
-                                                    <rect key="frame" x="120" y="54" width="284" height="87"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpb-zF-wHl">
+                                                    <rect key="frame" x="117" y="54.5" width="287" height="86.5"/>
                                                     <string key="text">Two journalists dig deep into their search for the truth about the decay of a judicial system, and about a liar who stops lying. The story is based on the true story behind one of Sweden's biggest legal scandals.
 </string>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="EdA-7s-CjF" firstAttribute="leading" secondItem="jsU-dd-krB" secondAttribute="leading" constant="9" id="5G2-dk-dbV"/>
-                                                <constraint firstAttribute="bottom" secondItem="EdA-7s-CjF" secondAttribute="bottom" constant="8" id="Agp-zo-EF0"/>
+                                                <constraint firstAttribute="trailing" secondItem="mGP-Xg-o6m" secondAttribute="trailing" constant="10" id="6Fk-Dr-Tep"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EdA-7s-CjF" secondAttribute="bottom" constant="8" id="Agp-zo-EF0"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Dpb-zF-wHl" secondAttribute="bottom" constant="11" id="Bp8-1U-tX3"/>
+                                                <constraint firstItem="mGP-Xg-o6m" firstAttribute="leading" secondItem="EdA-7s-CjF" secondAttribute="trailing" constant="10" id="P6l-ZZ-gjd"/>
+                                                <constraint firstItem="mGP-Xg-o6m" firstAttribute="top" secondItem="jsU-dd-krB" secondAttribute="top" constant="8" id="Tux-8q-Vru"/>
+                                                <constraint firstItem="Dpb-zF-wHl" firstAttribute="leading" secondItem="EdA-7s-CjF" secondAttribute="trailing" constant="8" id="i5D-FH-VPk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dpb-zF-wHl" secondAttribute="trailing" constant="10" id="irX-xm-AHB"/>
                                                 <constraint firstItem="EdA-7s-CjF" firstAttribute="top" secondItem="jsU-dd-krB" secondAttribute="top" constant="8" id="udx-1o-iWK"/>
+                                                <constraint firstItem="Dpb-zF-wHl" firstAttribute="top" secondItem="mGP-Xg-o6m" secondAttribute="bottom" constant="8" id="xv0-ye-bH1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
