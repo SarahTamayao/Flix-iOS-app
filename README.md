@@ -21,7 +21,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="https://github.com/charlesxu27/Flix-iOS-app/blob/main/flix_screen_recording.gif?raw=true" width=50><br>
+<img src="https://github.com/charlesxu27/Flix-iOS-app/blob/main/flix_screen_recording.gif?raw=true" width=250><br>
 
 ### Notes
 I think I just have to spend some time learning the syntax — dealing with Swift optionals as well as knowning what code goes in what section are my two main challenges right now.
