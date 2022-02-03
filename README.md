@@ -24,7 +24,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="https://github.com/charlesxu27/Flix-iOS-app/blob/main/flix_screen_recording.gif?raw=true" width=250><br>
 
 ### Notes
-I think I just have to spend some time learning the syntax — dealing with Swift optionals as well as knowning what code goes in what section are my two main challenges right now.
+I think I just have to spend some time learning the syntax and environment — dealing with Swift optionals as well as knowing what code goes in what section are my two main challenges right now.
 Other than that, I think I have a good grasp of the generic template for table views and custom cells.
 
 By Charles Xu
