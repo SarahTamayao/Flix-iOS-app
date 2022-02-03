@@ -66,6 +66,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         let synopsis = movie["overview"] as! String
         
         cell.titleLabel.text = title
+        cell.titleLabel.sizeToFit()  // use this so that title is somewhat vertically aligned
         // cell.textLabel!.text = "row: \(indexPath.row)"  // print out x rows with output row: #
         // Why the !/?^: called Swift Optionals
         cell.synopsisLabel.text = synopsis
