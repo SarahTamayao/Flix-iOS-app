@@ -70,6 +70,27 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         return cell
     }
     
+    // link and prepare details screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        print("Loading Superhero Details Screen")
+        
+        // 1. Find the selected superhero movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // 2. Pass selected superhero movie to SuperheroDetailsVC...
+        let detailsViewController = segue.destination as! SuperheroDetailsViewController
+         detailsViewController.movie = movie // store selected movie into movie dictionary of details VC
+        
+        // Tip: Configure cell to deselect after tapping
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
+        
+        
+        
     
 
     /*
@@ -81,5 +102,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
