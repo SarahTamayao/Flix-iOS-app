@@ -23,7 +23,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.dataSource = self // call to run both tableView functions
         tableView.delegate = self   // call to run both tableView functions
         
-        print("Hi!")
+//        print("Hi!")
         
         // Do any additional setup after loading the view.
         
@@ -81,14 +81,28 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
 
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("Loading Details Screen")
+        
+        // TASKS:
+        
+        // 1. Find the selected movie (sender is cell tapped on)
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // 2. Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        // ^ passed movie to navigation
+        
+        // 3. Manually select tapped cell
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
-    */
 
 }
