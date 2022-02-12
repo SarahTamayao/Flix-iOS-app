@@ -36,6 +36,13 @@ class SuperheroDetailsViewController: UIViewController {
         backDropView.af.setImage(withURL: backDropUrl!)
     }
     
+  
+    @IBAction func tapTrailerView(_ sender: UITapGestureRecognizer) {
+        
+        print("Tapped Trailer View")
+    }
+    
+    
 
     /*
     // MARK: - Navigation
