@@ -37,10 +37,23 @@ class SuperheroDetailsViewController: UIViewController {
     }
     
   
-    @IBAction func tapTrailerView(_ sender: UITapGestureRecognizer) {
-        
-        print("Tapped Trailer View")
-    }
+//    @IBAction func tapTrailerView(_ sender: UITapGestureRecognizer) {
+//
+//        print("Tapped Trailer View")
+//
+//
+//        // 1. Find the selected superhero movie
+//        let ytBaseUrl = "https://www.youtube.com/watch?v="
+//        let trailerPath = movie["key"] as! String
+//        let posterUrl = URL(string: ytBaseUrl + trailerPath)
+//        posterView.af.setImage(withURL: posterUrl!)
+//
+//        // 2. Pass selected superhero movie to SuperheroDetailsVC...
+//        let trailerViewController = segue.destination as! TrailerViewController
+//        trailerViewController.trailerWebView = trailerUrl // store selected movie into movie dictionary of details VC
+//
+//
+//    }
     
     
 
