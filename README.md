@@ -16,7 +16,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://github.com/charlesxu27/Flix-iOS-app/blob/main/flix_part_2.gif?raw=true" width=250><br>
 
 ### Notes
 I am still finding it a little tricky to configure auto-constraints. But I'm really liking the way Storyboard organizes screens, esp. the tree org. we learned. I am working through the trailer add-on, and I feel like I'm close but just need to understand how to pass the data.
